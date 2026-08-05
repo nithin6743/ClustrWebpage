@@ -1,13 +1,9 @@
-@font-face {
-  font-family: 'Ailerons';
-  src: url('/fonts/Ailerons-Typeface.otf') format('opentype');
-}
-
 .header {
   display: flex;
   justify-content: center;
   padding: 12px 0;
   font-family: 'Ailerons';
+
 }
 
 .navLinks {
@@ -35,6 +31,7 @@
   top: 24px;
   left: 50%;
   transform: translateX(-50%);
+  z-index: 9999;
 
   display: flex;
   align-items: center;
@@ -65,4 +62,40 @@
   overflow: hidden;
 
   isolation: isolate;
+}
+
+/* ================= TABLET ================= */
+
+@media (max-width: 1024px) {
+  .navBar {
+    gap: 1.4rem;
+
+    padding: 10px 14px;
+  }
+
+  .navLinks {
+    font-size: 18px;
+  }
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 768px) {
+  .navBar {
+    width: 90%;
+
+    justify-content: space-around;
+
+    gap: 0.8rem;
+
+    padding: 12px;
+  }
+
+  .navLinks {
+    font-size: 15px;
+  }
+
+  .download {
+    padding: 6px 10px;
+  }
 }

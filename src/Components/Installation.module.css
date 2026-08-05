@@ -1,14 +1,115 @@
-.installation {
-  margin-top: 400px ;
-  margin-left: 280px;
-  margin-bottom: 400px;
-  margin-bottom: 280px;
-  width: 72%;
-  background-color: #ffffff7d;
-  padding: 24px;
+
+
+.installTitle {
+  font-size: 64px;
+  font-family: Aeonik bold;
   display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
 }
 
-.githubDownload {
+.installTitle::before,
+.installTitle::after {
+  content: '';
+  display: block;
+  width: 180px;
+  height: 2px;
+  margin: 0 24px;
+  background: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 0 6px rgba(255, 255, 255, 0.25);
+}
+
+.installation {
+  margin-top: 400px;
+  margin-left: 375px;
+  margin-bottom: 400px;
+  margin-bottom: 280px;
+  width: 60%;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+.Download {
   color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.Download p {
+  font-family: Aeonik bold;
+  font-size: 40px;
+  font-weight: 900;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 1.5px;
+}
+
+.Download li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: Aeonik regular;
+  font-size: 24px;
+  padding-left: 80px;
+  list-style-type: none;
+  height: 48px;
+}
+
+/* ================= TABLET ================= */
+
+@media (max-width: 1024px) {
+  .installation {
+    margin: 220px auto;
+
+    width: 90%;
+
+    padding: 28px;
+  }
+
+  .installTitle {
+    font-size: 48px;
+  }
+
+  .installTitle::before,
+  .installTitle::after {
+    width: 100px;
+  }
+
+  .Download p {
+    font-size: 32px;
+  }
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 768px) {
+  .installation {
+    margin: 140px auto;
+
+    width: 92%;
+
+    padding: 18px;
+  }
+
+  .installTitle {
+    font-size: 34px;
+  }
+
+  .installTitle::before,
+  .installTitle::after {
+    width: 50px;
+
+    margin: 0 12px;
+  }
+
+  .Download p {
+    font-size: 24px;
+  }
 }

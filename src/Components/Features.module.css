@@ -1,0 +1,155 @@
+
+
+.featuresTitle {
+  font-size: 64px;
+  font-family: Aeonik bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+}
+
+.featuresTitle::before,
+.featuresTitle::after {
+  content: '';
+  display: block;
+  width: 180px;
+  height: 2px;
+  margin: 0 24px;
+  background: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 0 6px rgba(255, 255, 255, 0.25);
+}
+
+.features {
+  margin: 380px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.featureCard video {
+  height: 500px;
+  margin-left: 100px;
+}
+
+.featureCard {
+  margin-top: 110px;
+}
+
+.featureCard h3 {
+  margin-left: 120px;
+  margin-top: 8px;
+  font-family: Aeonik bold;
+  font-size: 24px;
+  color: #ffffff;
+}
+
+.features h4 {
+  margin-top: 8px;
+  font-family: Aeonik bold;
+  font-size: 24px;
+  color: #ffffff;
+}
+
+.featureCard p {
+  margin-top: -16px;
+  margin-left: 120px;
+  font-family: Aeonik regular;
+  font-size: 24px;
+  color: #ffffff;
+}
+
+.features h3 {
+  width: 100%;
+  font-family: Aeonik bold;
+  font-size: 32px;
+  color: #ffffff;
+}
+
+/* ================= TABLET ================= */
+
+@media (max-width: 1024px) {
+  .features {
+    margin: 220px auto;
+
+    width: 90%;
+  }
+
+  .featuresTitle {
+    font-size: 48px;
+  }
+
+  .featuresTitle::before,
+  .featuresTitle::after {
+    width: 100px;
+  }
+
+  .featureCard {
+    margin-top: 80px;
+  }
+
+  .featureCard video {
+    width: 100%;
+
+    height: auto;
+
+    margin: 0;
+
+    border-radius: 12px;
+  }
+
+  .featureCard h3 {
+    margin: 24px 0 12px;
+
+    font-size: 24px;
+  }
+
+  .featureCard p {
+    margin: 0;
+
+    font-size: 20px;
+
+    line-height: 1.6;
+  }
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 768px) {
+  .features {
+    margin: 140px auto;
+
+    width: 92%;
+  }
+
+  .featuresTitle {
+    font-size: 34px;
+  }
+
+  .featuresTitle::before,
+  .featuresTitle::after {
+    width: 45px;
+
+    margin: 0 12px;
+  }
+
+  .featureCard {
+    margin-top: 56px;
+  }
+
+  .featureCard video {
+    width: 100%;
+
+    height: auto;
+  }
+
+  .featureCard h3 {
+    font-size: 22px;
+
+    margin: 20px 0 8px;
+  }
+
+  .featureCard p {
+    font-size: 17px;
+  }
+}
