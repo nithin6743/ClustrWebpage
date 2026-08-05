@@ -5,20 +5,18 @@ export default function MenuBar() {
     <header className={styles.header}>
       {/* <img src="./favicons/NKsvg.svg" alt="Nithin"/> */}
       <nav className={styles.navBar}>
-        <li>
-          <a href='#'>
-            <img src='./favicons/NKsvg.svg' alt='Nithin' />
-          </a>
-        </li>
-        <li>
-          <a href='#'>Featured</a>
-        </li>
-        <li>
-          <a href='#'>Installation</a>
-        </li>
-        <li>
-          <a href='#'>Download</a>
-        </li>
+        <a href='#'>
+          <img src='./favicons/NKsvg.svg' alt='Nithin' />
+        </a>
+        <a href='#' className={styles.navLinks}>
+          Featured
+        </a>
+        <a href='#' className={styles.navLinks}>
+          Installation
+        </a>
+        <a href='#' className={`${styles.navLinks} ${styles.download}`}>
+          Download
+        </a>
       </nav>
     </header>
   );

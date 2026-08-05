@@ -1,0 +1,85 @@
+@font-face {
+  font-family: 'Aeonik';
+  src: url('/fonts/aeoniktrial-bold.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Ailerons';
+  src: url('/fonts/Ailerons-Typeface.otf') format('opentype');
+}
+
+.home {
+  font-family: Aeonik;
+  display: flex;
+  gap: 16px;
+  margin-top: 144px;
+  flex-direction: column;
+  align-items: center;
+  align-items: center;
+}
+
+.title {
+  color: #ffffff;
+  font-size: 48px;
+  display: flex;
+  align-items: center;
+}
+
+.title::before,
+.title::after {
+  content: '';
+  display: block;
+  width: 180px;
+  height: 2px;
+  margin: 0 24px;
+  background: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 0 6px rgba(255, 255, 255, 0.25);
+}
+
+.heroText {
+  color: #ffffff;
+  font-size: 160px;
+  margin-top: -18px;
+}
+
+.actions {
+  margin-top: -40px;
+  width: 25%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cta {
+  color: #ffffff;
+  font-family: Ailerons;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  padding: 16px;
+  border-radius: 10px;
+
+  /* Glass */
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.18),
+    rgba(255, 255, 255, 0.04)
+  );
+
+  backdrop-filter: blur(22px) saturate(180%) brightness(115%);
+
+  -webkit-backdrop-filter: blur(22px) saturate(180%) brightness(115%);
+
+  border: 1px solid rgba(255, 255, 255, 0.22);
+
+  box-shadow:
+    0 10px 40px rgba(0, 0, 0, 0.35),
+    inset 0 1px rgba(255, 255, 255, 0.45),
+    inset 0 -1px rgba(255, 255, 255, 0.06);
+
+  overflow: hidden;
+
+  isolation: isolate;
+}

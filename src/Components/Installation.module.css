@@ -1,0 +1,14 @@
+.installation {
+  margin-top: 400px ;
+  margin-left: 280px;
+  margin-bottom: 400px;
+  margin-bottom: 280px;
+  width: 72%;
+  background-color: #ffffff7d;
+  padding: 24px;
+  display: flex;
+}
+
+.githubDownload {
+  color: #ffffff;
+}
