@@ -53,7 +53,7 @@ function Footer() {
           Project Repo
         </a>
       </div>
-      <div className={styles.footerEnd}>© 2026 Clustr</div>
+      <div className={styles.footerEnd}>© 2026 Clustr | Nithin</div>
     </section>
   );
 }
