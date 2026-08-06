@@ -22,7 +22,7 @@ export default function CopyCard({ command }) {
     <div className={styles.codeBlock}>
       <code>{command}</code>
 
-      <button onClick={handleCopy} className={styles.copyButton}>
+      <button onClick={handleCopy} className={styles.copyButton} aria-label="copy commands button" >
         {copied ? (
           <svg
             width='24'

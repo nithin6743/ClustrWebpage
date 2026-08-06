@@ -11,6 +11,7 @@ function Footer() {
       <p>Open Source • Version 2.1.0</p>
       <div className={styles.actions}>
         <a
+          aria-label="button to go to developer's github"
           className={styles.cta}
           href='https://github.com/nithin6743'
           target='_blank'
@@ -31,6 +32,7 @@ function Footer() {
           Developer
         </a>
         <a
+          aria-label='button to go to project repo'
           className={styles.cta}
           href='https://github.com/nithin6743/Clustr'
           target='_blank'

@@ -8,7 +8,7 @@ function Home() {
         Your bookmarks. <br></br> Finally organized.
       </h2>
       <div className={styles.actions}>
-        <a className={styles.cta} href='/downloads/Clustr-2.1.0.zip' download>
+        <a  aria-label="button to download Clustr zip file"  className={styles.cta} href='/downloads/Clustr-2.1.0.zip' download>
           <svg
             width='24'
             height='24'
@@ -40,7 +40,7 @@ function Home() {
           </svg>
           Download for windows
         </a>
-        <a
+        <a  aria-label="button to go to project repo" 
           className={styles.cta}
           href='https://github.com/nithin6743/Clustr'
           target='_blank'
