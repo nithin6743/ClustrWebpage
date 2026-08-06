@@ -60,7 +60,7 @@
 
   overflow: hidden;
 
-  isolation: isolate;
+  /* isolation: isolate; */
 }
 
 .selectables {
