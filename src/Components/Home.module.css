@@ -1,6 +1,6 @@
 .home {
   scroll-margin-top: 126px; /* 168 → 126 */
-  font-family: Aeonik bold;
+  font-family: Aeonik bold ;
   display: flex;
   gap: 12px; /* 16 → 12 */
   margin-top: 108px; /* 144 → 108 */
@@ -67,9 +67,9 @@
   border: 0.75px solid rgba(255, 255, 255, 0.22); /* 1 → 0.75 */
 
   box-shadow:
-    0 7.5px 30px rgba(0, 0, 0, 0.35), /* 10 40 → 7.5 30 */
-    inset 0 0.75px rgba(255, 255, 255, 0.45), /* 1 → 0.75 */
-    inset 0 -0.75px rgba(255, 255, 255, 0.06);
+    0 7.5px 30px rgba(0, 0, 0, 0.35),
+    /* 10 40 → 7.5 30 */ inset 0 0.75px rgba(255, 255, 255, 0.45),
+    /* 1 → 0.75 */ inset 0 -0.75px rgba(255, 255, 255, 0.06);
 
   overflow: hidden;
   isolation: isolate;

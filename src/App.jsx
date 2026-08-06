@@ -10,10 +10,12 @@ function App() {
   return (
     <>
       <MenuBar />
-      <Home />
-      <Features />
-      <Installation />
-      <Footer />
+      <main>
+        <Home />
+        <Features />
+        <Installation />
+        <Footer />
+      </main>
     </>
   );
 }

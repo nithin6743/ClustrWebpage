@@ -1,21 +1,25 @@
 @font-face {
   font-family: 'Aeonik bold';
   src: url('/fonts/aeoniktrial-bold.otf') format('opentype');
+  font-display: swap;
 }
 
 @font-face {
   font-family: 'Aeonik regular';
   src: url('/fonts/aeoniktrial-regular.otf') format('opentype');
+  font-display: swap;
 }
 
 @font-face {
   font-family: 'Ailerons';
   src: url('/fonts/Ailerons-Typeface.otf') format('opentype');
+  font-display: swap;
 }
 
 @font-face {
   font-family: 'Jetbrains';
   src: url('/fonts/JetBrainsMonoNL-Regular.ttf') format('truetype');
+  font-display: swap;
 }
 
 html {
