@@ -2,12 +2,13 @@ import styles from './Footer.module.css';
 
 function Footer() {
   return (
-    <section className={styles.footer}>
+    <section id='developer' className={styles.footer}>
       <h2 className={styles.footerTitle}>Built by Nithin</h2>
       <p>
         Clustr is open source. Contributions, feature ideas, and bug reports are
         always welcome.❤️
       </p>
+      <p>Open Source • Version 2.1.0</p>
       <div className={styles.actions}>
         <a
           className={styles.cta}

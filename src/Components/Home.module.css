@@ -1,17 +1,16 @@
 .home {
-  scroll-margin-top: 168px;
+  scroll-margin-top: 126px; /* 168 → 126 */
   font-family: Aeonik bold;
   display: flex;
-  gap: 16px;
-  margin-top: 144px;
+  gap: 12px; /* 16 → 12 */
+  margin-top: 108px; /* 144 → 108 */
   flex-direction: column;
-  align-items: center;
   align-items: center;
 }
 
 .title {
   color: #ffffff;
-  font-size: 48px;
+  font-size: 36px; /* 48 → 36 */
   display: flex;
   align-items: center;
 }
@@ -20,21 +19,21 @@
 .title::after {
   content: '';
   display: block;
-  width: 180px;
-  height: 2px;
-  margin: 0 24px;
+  width: 135px; /* 180 → 135 */
+  height: 1.5px; /* 2 → 1.5 */
+  margin: 0 18px; /* 24 → 18 */
   background: rgba(255, 255, 255, 0.7);
-  box-shadow: 0 0 6px rgba(255, 255, 255, 0.25);
+  box-shadow: 0 0 4.5px rgba(255, 255, 255, 0.25); /* 6 → 4.5 */
 }
 
 .heroText {
   color: #ffffff;
-  font-size: 160px;
-  margin-top: -18px;
+  font-size: 120px; /* 160 → 120 */
+  margin-top: -13.5px; /* -18 → -13.5 */
 }
 
 .actions {
-  margin-top: -40px;
+  margin-top: -30px; /* -40 → -30 */
   width: 25%;
   display: flex;
   justify-content: space-between;
@@ -44,13 +43,13 @@
 .cta {
   color: #ffffff;
   font-family: Ailerons;
-  font-size: 20px;
+  font-size: 15px; /* 20 → 15 */
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 8px;
-  padding: 16px;
-  border-radius: 10px;
+  gap: 6px; /* 8 → 6 */
+  padding: 12px; /* 16 → 12 */
+  border-radius: 7.5px; /* 10 → 7.5 */
   text-decoration: none;
   z-index: 1;
 
@@ -61,54 +60,62 @@
     rgba(255, 255, 255, 0.04)
   );
 
-  backdrop-filter: blur(22px) saturate(180%) brightness(115%);
+  backdrop-filter: blur(16.5px) saturate(180%) brightness(115%); /* 22 → 16.5 */
 
-  -webkit-backdrop-filter: blur(22px) saturate(180%) brightness(115%);
+  -webkit-backdrop-filter: blur(16.5px) saturate(180%) brightness(115%);
 
-  border: 1px solid rgba(255, 255, 255, 0.22);
+  border: 0.75px solid rgba(255, 255, 255, 0.22); /* 1 → 0.75 */
 
   box-shadow:
-    0 10px 40px rgba(0, 0, 0, 0.35),
-    inset 0 1px rgba(255, 255, 255, 0.45),
-    inset 0 -1px rgba(255, 255, 255, 0.06);
+    0 7.5px 30px rgba(0, 0, 0, 0.35), /* 10 40 → 7.5 30 */
+    inset 0 0.75px rgba(255, 255, 255, 0.45), /* 1 → 0.75 */
+    inset 0 -0.75px rgba(255, 255, 255, 0.06);
 
   overflow: hidden;
   isolation: isolate;
+}
+
+.cta:hover {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.4),
+    rgba(255, 255, 255, 0.1)
+  );
 }
 
 /* ================= TABLET ================= */
 
 @media (max-width: 1024px) {
   .home {
-    margin-top: 120px;
-    padding: 0 40px;
+    margin-top: 90px; /* 120 → 90 */
+    padding: 0 30px; /* 40 → 30 */
   }
 
   .title {
-    font-size: 36px;
+    font-size: 27px; /* 36 → 27 */
   }
 
   .title::before,
   .title::after {
-    width: 110px;
+    width: 82.5px; /* 110 → 82.5 */
   }
 
   .heroText {
-    font-size: 88px;
+    font-size: 66px; /* 88 → 66 */
     text-align: center;
-    line-height: 1.05;
+    line-height: 0.7875; /* 1.05 → 0.7875 */
   }
 
   .actions {
     width: 100%;
     justify-content: center;
-    gap: 20px;
+    gap: 15px; /* 20 → 15 */
     flex-wrap: wrap;
   }
 
   .cta {
-    font-size: 18px;
-    padding: 14px 18px;
+    font-size: 13.5px; /* 18 → 13.5 */
+    padding: 10.5px 13.5px; /* 14 18 → 10.5 13.5 */
   }
 }
 
@@ -116,28 +123,28 @@
 
 @media (max-width: 768px) {
   .home {
-    margin-top: 100px;
-    padding: 0 24px;
+    margin-top: 75px; /* 100 → 75 */
+    padding: 0 18px; /* 24 → 18 */
   }
 
   .title {
-    font-size: 28px;
+    font-size: 21px; /* 28 → 21 */
   }
 
   .title::before,
   .title::after {
-    width: 60px;
-    margin: 0 12px;
+    width: 45px; /* 60 → 45 */
+    margin: 0 9px; /* 12 → 9 */
   }
 
   .heroText {
-    font-size: 56px;
+    font-size: 42px; /* 56 → 42 */
     text-align: center;
   }
 
   .actions {
     flex-direction: column;
-    gap: 16px;
+    gap: 12px; /* 16 → 12 */
   }
 
   .cta {

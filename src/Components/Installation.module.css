@@ -1,7 +1,5 @@
-
-
 .installTitle {
-  font-size: 64px;
+  font-size: 48px; /* 64 → 48 */
   font-family: Aeonik bold;
   display: flex;
   align-items: center;
@@ -13,42 +11,42 @@
 .installTitle::after {
   content: '';
   display: block;
-  width: 180px;
-  height: 2px;
-  margin: 0 24px;
+  width: 135px; /* 180 → 135 */
+  height: 1.5px; /* 2 → 1.5 */
+  margin: 0 18px; /* 24 → 18 */
   background: rgba(255, 255, 255, 0.7);
-  box-shadow: 0 0 6px rgba(255, 255, 255, 0.25);
+  box-shadow: 0 0 4.5px rgba(255, 255, 255, 0.25); /* 6 → 4.5 */
 }
 
 .installation {
-  margin-top: 400px;
-  margin-left: 375px;
-  margin-bottom: 400px;
-  margin-bottom: 280px;
+  margin-top: 300px; /* 400 → 300 */
+  margin-left: 281.25px; /* 375 → 281.25 */
+  /* margin-bottom: 300px; 400 → 300 */
+  margin-bottom: 210px; /* 280 → 210 */
   width: 60%;
   background-color: rgba(0, 0, 0, 0.2);
-  padding: 24px;
+  padding: 18px; /* 24 → 18 */
   display: flex;
   flex-direction: column;
   justify-content: center;
-  border-radius: 10px;
+  border-radius: 7.5px; /* 10 → 7.5 */
 }
 
 .Download {
   color: #ffffff;
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 9px; /* 12 → 9 */
 }
 
 .Download p {
   font-family: Aeonik bold;
-  font-size: 40px;
+  font-size: 30px; /* 40 → 30 */
   font-weight: 900;
   display: flex;
   align-items: center;
   justify-content: center;
-  letter-spacing: 1.5px;
+  letter-spacing: 1.125px; /* 1.5 → 1.125 */
 }
 
 .Download li {
@@ -56,34 +54,34 @@
   align-items: center;
   justify-content: space-between;
   font-family: Aeonik regular;
-  font-size: 24px;
-  padding-left: 80px;
+  font-size: 18px; /* 24 → 18 */
+  padding-left: 60px; /* 80 → 60 */
   list-style-type: none;
-  height: 48px;
+  height: 40px; /* 48 → 36 */
 }
 
 /* ================= TABLET ================= */
 
 @media (max-width: 1024px) {
   .installation {
-    margin: 220px auto;
+    margin: 165px auto; /* 220 → 165 */
 
     width: 90%;
 
-    padding: 28px;
+    padding: 21px; /* 28 → 21 */
   }
 
   .installTitle {
-    font-size: 48px;
+    font-size: 36px; /* 48 → 36 */
   }
 
   .installTitle::before,
   .installTitle::after {
-    width: 100px;
+    width: 75px; /* 100 → 75 */
   }
 
   .Download p {
-    font-size: 32px;
+    font-size: 24px; /* 32 → 24 */
   }
 }
 
@@ -91,25 +89,25 @@
 
 @media (max-width: 768px) {
   .installation {
-    margin: 140px auto;
+    margin: 105px auto; /* 140 → 105 */
 
     width: 92%;
 
-    padding: 18px;
+    padding: 13.5px; /* 18 → 13.5 */
   }
 
   .installTitle {
-    font-size: 34px;
+    font-size: 25.5px; /* 34 → 25.5 */
   }
 
   .installTitle::before,
   .installTitle::after {
-    width: 50px;
+    width: 37.5px; /* 50 → 37.5 */
 
-    margin: 0 12px;
+    margin: 0 9px; /* 12 → 9 */
   }
 
   .Download p {
-    font-size: 24px;
+    font-size: 18px; /* 24 → 18 */
   }
 }
