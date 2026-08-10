@@ -66,7 +66,7 @@ export default function MenuBar() {
           Installation
         </a>
         <a
-          href='/downloads/Clustr-2.1.0.zip'
+          href='/downloads/Clustr 2.1.zip'
           download
           className={`${styles.navLinks} ${styles.download}`}
         >

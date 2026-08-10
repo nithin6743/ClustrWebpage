@@ -8,7 +8,7 @@ function Home() {
         Your bookmarks. <br></br> Finally organized.
       </h2>
       <div className={styles.actions}>
-        <a  aria-label="button to download Clustr zip file"  className={styles.cta} href='/downloads/Clustr-2.1.0.zip' download>
+        <a  aria-label="button to download Clustr zip file"  className={styles.cta} href='/downloads/Clustr 2.1.zip' download>
           <svg
             width='24'
             height='24'
